@@ -136,7 +136,7 @@ group :development do
   gem "rails-erd"
   gem "letter_opener"
   gem 'foreman'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   #gem 'thin'
   gem 'puma'
