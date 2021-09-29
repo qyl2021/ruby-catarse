@@ -17,7 +17,7 @@ gem 'ruby-progressbar'
 gem 'sidekiq',  '~> 4.0.1'
 
 # Turns every field on a editable one
-gem "best_in_place"
+gem "best_in_place", ">= 3.1.1"
 
 # State machine for attributes on models
 # @TODO move payment to statesman
@@ -27,7 +27,7 @@ gem 'statesman'
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.0.0'
 gem 'postgres_ext'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -49,11 +49,11 @@ gem 'catarse_pagarme', '~> 2.16.2'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
-gem 'draper'
+gem 'draper', '>= 2.1.0'
 gem "sentry-raven"
 
 # Frontend stuff
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.1'
 gem 'browser', "1.0.1"
 gem "cocoon"
 
@@ -61,7 +61,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -70,15 +70,15 @@ gem 'pundit'
 gem 'json_web_token'
 
 # Email marketing
-gem 'gridhook'
+gem 'gridhook', '>= 0.2.0'
 gem 'sendgrid-ruby'
 gem 'zendesk_api'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 3.3.1'
+gem 'mail_form', '>= 1.5.1'
 gem "auto_html", "~> 1.6"
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
 
 # Uploads
@@ -88,16 +88,16 @@ gem 'mini_magick', '>= 4.9.4'
 # Other Tools
 gem 'excelinator'
 gem 'ranked-model'
-gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
+gem 'feedjira', '>= 2.1.4'
+gem 'inherited_resources', '>= 1.6.0'
+gem 'has_scope', '>= 0.6.0'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.1'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
@@ -107,7 +107,7 @@ gem 'routing-filter', '~> 0.6.0'
 
 group :production do
   # Gem used to handle image uploading
-  gem 'fog-aws'
+  gem 'fog-aws', '>= 0.12.0'
 
   # Workers, forks and all that jazz
   gem 'unicorn'
@@ -132,7 +132,7 @@ group :production do
   #gem 'dalli'
 end
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.0'
   gem "rails-erd"
   gem "letter_opener"
   gem 'foreman'
@@ -146,12 +146,12 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.2'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
   gem 'pry'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.14.1'
 end
 
 group :sandbox, :test, :development do
@@ -162,22 +162,22 @@ end
 group :test do
   gem 'zonebie'
   gem 'fakeweb', github: 'SamMolokanov/fakeweb', branch: 'ruby-2-4-1-support'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.11.0'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
-  gem 'factory_girl_rails'
-  gem 'capybara'
+  gem 'factory_girl_rails', '>= 4.7.0'
+  gem 'capybara', '>= 2.10.1'
   gem 'selenium-webdriver'
 end
 
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'compass-rails'
+gem 'jquery-rails', '>= 4.3.1'
+gem 'jquery-ui-rails', '>= 6.0.1'
+gem 'sass-rails', '>= 5.0.6'
+gem 'coffee-rails', '>= 4.2.1'
+gem 'compass-rails', '>= 3.0.2'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
 gem "rack", ">= 1.6.11"
-gem "loofah", ">= 2.2.3"
+gem "loofah", ">= 2.6.0"
 gem 'concurrent-ruby'
