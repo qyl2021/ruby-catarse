@@ -34,7 +34,7 @@ gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 gem 'whenever'
 
-gem 'schema_plus'
+gem 'schema_plus', '>= 2.0.1'
 gem 'catarse_settings_db', '>= 0.2.0'
 
 # Notifications
