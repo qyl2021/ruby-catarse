@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 5.2.7', '>= 5.2.7.1'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
@@ -45,7 +45,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -61,7 +61,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -75,8 +75,8 @@ gem 'sendgrid-ruby'
 gem 'zendesk_api'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 4.0.0'
+gem 'mail_form', '>= 1.7.1'
 gem "auto_html", "~> 1.6"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
@@ -89,21 +89,21 @@ gem 'mini_magick', '>= 4.9.4'
 gem 'excelinator'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
+gem 'inherited_resources', '>= 1.9.0'
+gem 'has_scope', '>= 0.7.2'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.1'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
 # Translations
 gem 'http_accept_language'
-gem 'routing-filter', '~> 0.6.0'
+gem 'routing-filter', '~> 0.6.2'
 
 group :production do
   # Gem used to handle image uploading
@@ -174,7 +174,7 @@ end
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'sass-rails'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 gem 'compass-rails'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
