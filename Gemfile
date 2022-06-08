@@ -99,7 +99,7 @@ gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
 gem 'responders', '~> 2.0'
 gem "cpf_cnpj"
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2', '>= 2.8.7'
 
 # Translations
 gem 'http_accept_language'
