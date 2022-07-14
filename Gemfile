@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
@@ -45,7 +45,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
