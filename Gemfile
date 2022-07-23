@@ -61,7 +61,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -82,7 +82,7 @@ gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
 
 # Uploads
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '>= 4.9.4'
 
 # Other Tools
@@ -97,7 +97,7 @@ gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.1'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
