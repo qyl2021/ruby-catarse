@@ -96,7 +96,7 @@ gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
-gem 'rdstation-ruby-client'
+gem 'rdstation-ruby-client', '>= 0.1'
 gem 'responders', '~> 2.0'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
