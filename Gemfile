@@ -45,12 +45,12 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 2.16.3'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
 gem 'draper'
-gem "sentry-raven"
+gem "sentry-raven", ">= 3.0.0"
 
 # Frontend stuff
 gem 'slim-rails'
@@ -63,8 +63,8 @@ gem 'high_voltage'
 # Authentication and Authorization
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
-gem 'omniauth-facebook'
-gem 'koala'
+gem 'omniauth-facebook', '>= 5.0.0'
+gem 'koala', '>= 2.5.0'
 gem 'devise', '4.7.2'
 gem 'pundit'
 gem 'json_web_token'
@@ -72,7 +72,7 @@ gem 'json_web_token'
 # Email marketing
 gem 'gridhook'
 gem 'sendgrid-ruby'
-gem 'zendesk_api'
+gem 'zendesk_api', '>= 2.0.0'
 
 # HTML manipulation and formatting
 gem 'simple_form'
@@ -88,7 +88,7 @@ gem 'mini_magick', '>= 4.9.4'
 # Other Tools
 gem 'excelinator'
 gem 'ranked-model'
-gem 'feedjira'
+gem 'feedjira', '>= 3.0.0'
 gem 'inherited_resources'
 gem 'has_scope'
 gem 'spectator-validates_email',  require: 'validates_email'
